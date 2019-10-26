@@ -1,8 +1,3 @@
-/* Increase the font size in code blocks */
-code[class*="language-"], pre[class*="language-"] {
-    font-size: 1.4rem;
-}
-
 /* Make the logo look nice with dark background */
 .site-logo {
     max-height: 140px;
