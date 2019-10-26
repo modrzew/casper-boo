@@ -87,7 +87,7 @@ body {
 }
 
 .inner.feature-image {
-    margin-top: -200px;
+    margin-top: 30vh;
 }
 
 /* Usage:
@@ -990,6 +990,8 @@ make sure this only happens on large viewports / desktop-ish devices.
     align-items: center;
     overflow: hidden;
     background: color(var(--lightgrey) l(+10%));
+    position: absolute;
+    width: 100%;
 }
 
 .post-full-image img {
@@ -1378,23 +1380,6 @@ Usage (In Ghost editor):
 }
 
 /* Some grouped styles for smaller viewports */
-@media (max-width: 1170px) {
-    .post-full-image {
-        margin: 25px -6vw 50px;
-        border-radius: 0;
-    }
-
-    .post-full-image img {
-        max-width: 1170px;
-    }
-}
-
-@media (max-width: 700px) {
-    .post-full-image {
-        margin: 25px -5vw;
-    }
-}
-
 @media (max-width: 500px) {
     .post-full-meta {
         font-size: 1.2rem;
@@ -1406,13 +1391,8 @@ Usage (In Ghost editor):
         font-size: 3.3rem;
     }
 
-    .post-full-image {
-        margin-top: 5px;
-        margin-bottom: 5vw;
-    }
-
     .post-full-content {
-        padding: 0;
+        padding: 0 2vw;
     }
 
     .post-full-content:before,
