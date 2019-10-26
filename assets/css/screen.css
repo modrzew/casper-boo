@@ -71,11 +71,23 @@ body {
     padding: 0 5vw;
 }
 
+.site-main.outer {
+    padding: 0;
+}
+
 /* Centered content container blocks */
 .inner {
     margin: 0 auto;
     max-width: 1040px;
     width: 100%;
+}
+
+.inner.feature-image {
+    margin-top: -200px;
+}
+
+.site-main > .inner {
+    /* padding: 0 5vw; */
 }
 
 /* Usage:
@@ -913,6 +925,7 @@ make sure this only happens on large viewports / desktop-ish devices.
     padding: 70px 170px 50px;
     border-top-left-radius: 3px;
     border-top-right-radius: 3px;
+    background: #fff;
 }
 
 .post-full-tags {
@@ -976,13 +989,10 @@ make sure this only happens on large viewports / desktop-ish devices.
     flex-direction: column;
     align-items: center;
     overflow: hidden;
-    margin: 25px 0 50px;
     background: color(var(--lightgrey) l(+10%));
-    border-radius: 3px;
 }
 
 .post-full-image img {
-    max-width: 1040px;
     width: 100%;
     height: auto;
 }
