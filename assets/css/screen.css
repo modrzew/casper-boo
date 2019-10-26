@@ -1383,8 +1383,9 @@ Usage (In Ghost editor):
         font-size: 3.3rem;
     }
 
-    .post-full-content {
-        padding: 0 2vw;
+    .post-full-content,
+    .post-full-comments {
+        padding: 0 5vw;
     }
 
     .post-full-content:before,
