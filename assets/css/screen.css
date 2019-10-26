@@ -1186,8 +1186,8 @@ Usage (In Ghost editor):
     max-width: 100%;
     border: color(var(--darkgrey) l(-10%)) 1px solid;
     color: var(--whitegrey);
-    font-size: 1.4rem;
-    line-height: 1.5em;
+    font-size: 2rem;
+    line-height: 1.5;
     background: color(var(--darkgrey) l(-3%));
     border-radius: 5px;
 }
