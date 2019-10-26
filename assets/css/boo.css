@@ -1,0 +1,38 @@
+/* Increase the font size in code blocks */
+code[class*="language-"], pre[class*="language-"] {
+    font-size: 1.4rem;
+}
+
+/* Make the logo look nice with dark background */
+.site-logo {
+    max-height: 140px;
+    transform: contrast(0.1) grayscale(1) brightness(10);
+}
+.site-header::before {
+    background: rgba(0, 0, 0, 0.4);
+}
+
+/* Add support for "footnotes" tooltips */
+sup {
+    cursor: pointer;
+    position: relative;
+    text-decoration: underline;
+}
+sup > .footnote {
+    display: none;
+    position: absolute;
+    width: 300px;
+    background: white;
+    border: solid 1px black;
+    padding: 12px;
+    line-height: 1em;
+    z-index: 2;
+    top: 1em;
+    left: 25%;
+    cursor: default;
+}
+sup:active > .footnote,
+sup:hover > .footnote,
+sup:focus > .footnote {
+    display: block;
+}

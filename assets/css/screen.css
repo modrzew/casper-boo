@@ -22,7 +22,7 @@ production stylesheet in assets/built/screen.css
 9.  Error Template
 10. Subscribe Overlay
 11. Site Footer
-12. Dark Mode
+12. Custom rules for boo
 
 */
 
@@ -30,6 +30,10 @@ production stylesheet in assets/built/screen.css
 /* 1. Global - Set up the things
 /* ---------------------------------------------------------- */
 @import "global.css";
+
+/* 12. Custom rules for boo
+/* ---------------------------------------------------------- */
+@import "boo.css";
 
 body {
     background: #fff;
@@ -84,10 +88,6 @@ body {
 
 .inner.feature-image {
     margin-top: -200px;
-}
-
-.site-main > .inner {
-    /* padding: 0 5vw; */
 }
 
 /* Usage:
