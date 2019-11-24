@@ -591,18 +591,19 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
     display: flex;
     flex-direction: column;
     overflow: hidden;
-    margin: 0 0 40px;
-    padding: 0 20px 40px;
+    margin: 0 0 20px;
+    padding: 20px 20px 40px;
     min-height: 220px;
     border-bottom: 1px solid color(var(--lightgrey) l(+12%));
     border-radius: 4px;
     background-size: cover;
-    transition: transform ease 0.3s, box-shadow ease 0.3s;
+    transition: transform ease 0.3s, box-shadow ease 0.3s, border ease 0.3s;
 }
 
 .post-card:hover {
     transform: scale(1.02);
     box-shadow: 0 0 3px 0 rgba(0,0,0,0.4);
+    border-bottom: none;
 }
 
 .post-card-image-link {
@@ -876,7 +877,8 @@ make sure this only happens on large viewports / desktop-ish devices.
 /* Adjust some margins for smaller screens */
 @media (max-width: 1170px) {
     .post-card {
-        margin-bottom: 5vw;
+        margin-bottom: 2.5vw;
+        padding-top: 1.5vw;
     }
 }
 
@@ -886,7 +888,8 @@ make sure this only happens on large viewports / desktop-ish devices.
     }
 
     .post-card {
-        margin-bottom: 5vw;
+        margin-bottom: 2.5vw;
+        padding-top: 1.5vw;
     }
 }
 
