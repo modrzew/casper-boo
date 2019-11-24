@@ -48,7 +48,9 @@ function css(done) {
     ];
 
     pump([
-        src('assets/css/*.css', {sourcemaps: true}),
+        src([
+            'assets/css/**/*.css',
+        ], {sourcemaps: true}),
         postcss(processors),
         dest('assets/built/', {sourcemaps: '.'}),
         livereload()

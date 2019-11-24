@@ -35,6 +35,11 @@ production stylesheet in assets/built/screen.css
 /* ---------------------------------------------------------- */
 @import "boo.css";
 
+/* 13. Tippy
+/* ---------------------------------------------------------- */
+@import "lib/tippy-5.1.1-light-border.css";
+@import "lib/tippy-5.1.1-perspective.css";
+
 body {
     background: #fff;
 }
